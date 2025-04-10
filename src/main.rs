@@ -1,6 +1,7 @@
 use clipboard::ClipboardProvider;
 
 fn main() {
+    //for key searching: r"(?mi)\d-[a-fA-F0-9]{12}"
     let reg = regex::Regex::new(r"(?mi)(?:https?://)(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#/%=~_|$?!:,.]*\)|ann)")
         .expect("Error creating regex");
 
